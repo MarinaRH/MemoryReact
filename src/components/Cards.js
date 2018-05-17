@@ -56,7 +56,8 @@ class Cards extends Component {
         this.setState({
           compareImg: [],
           divClick: true
-        });
+        });       
+      
       } else {
         //Si las imágenes no coinciden, vuélvalas a ocultar
         var tempArr = this.state.image
