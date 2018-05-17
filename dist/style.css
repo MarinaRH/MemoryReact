@@ -1,30 +1,63 @@
 body{
   color: white;
-  background: linear-gradient(to right, #4CA1AF, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+  background: #333333;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #dd1818, #333333);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #dd1818, #333333); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 div.cards {
-  width: 20%;
+  width: 17%;
   height: 250px;
   background-image: url(https://lacajadepandra.files.wordpress.com/2009/06/joker-cards-cartoon-heart.jpg?w=181&h=300);
   background-size: 100% 100%;
-  border: 1px solid black;
+  border-radius: 7px;
+  box-shadow: 0 8px 10px -5px rgb(112, 111, 111); /*sombra interior*/
   display: inline-flex;
-  margin: auto 2%;
+  margin: 15px 3.7%;
 }
 
 img {
   width: 100%;
   height: 100%;
+  border-radius: 7px;
+  box-shadow: 0 8px 10px -5px rgb(112, 111, 111);
 }
 
 
 .Home {
-  background-image: url();
+  background-image: url(http://www.monacomania.net/casinos/foto-casinos.jpg);
   background-size: cover;
   background-position: bottom center;
   width: 100%;
 
   height: 100vh;
+}
+
+.Game-btn {
+  position: absolute;
+  border-radius: 10px;
+  padding: 20px;
+  bottom: 40%;
+  right: 35%;
+  background-color: rgb(150, 12, 12);
+  color: white;
+  font-size: 2.4em;
+  cursor: pointer;
+  font-weight: 900;
+  border-color: white;
+}
+
+.Game-btn:hover {
+  background-color: white;
+  color: rgb(150, 12, 12);
+}
+
+h1.center {
+  margin: 24px auto;
+  text-align: center;
+  color: white;
+  font-weight: 900;
+  font-size: 2.5rem;
+  
 }

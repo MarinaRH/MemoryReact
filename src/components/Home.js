@@ -6,7 +6,7 @@ const Home = ({ navigateTo }) => (
       <div>
         <div className="Home">
         </div>
-        <button  onClick={() => { navigateTo('pagina-2') }}>Jugar Ahora</button>
+        <button className="Game-btn" onClick={() => { navigateTo('pagina-2') }}>¡Jugar Ahora!</button>
       </div>
     
 )

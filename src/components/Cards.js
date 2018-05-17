@@ -30,8 +30,6 @@ class Cards extends Component {
   //Match
   checkMatch(key, e) {
     this.tempCheckArr.push(key.toString());
-
-    // Cree una copia de compareImg y agregue imgsrc para compararlo luego
     const imgSrc = e.target.firstChild.src;
     const compareImg = [...this.state.compareImg];
     compareImg.push(imgSrc);
@@ -44,13 +42,10 @@ class Cards extends Component {
       compareImg: compareImg,
       counter: this.state.counter + 1
     });
-
-    //Verifique si se hacen clic en 2 elementos; se desactive haciendo clic
     if (this.state.counter % 2) {
       this.setState({
         divClick: false
-      });
-      //Verifique si las imágenes coinciden
+      });//Verifique si las imágenes coinciden
       if (compareImg[0] === compareImg[1]) {
         this.tempCheckArr = [];
         this.setState({
@@ -58,8 +53,7 @@ class Cards extends Component {
           divClick: true
         });       
       
-      } else {
-        //Si las imágenes no coinciden, vuélvalas a ocultar
+      } else { //Si las imágenes no coinciden, vuélvalas a ocultar
         var tempArr = this.state.image
         var firstElement = parseInt(this.tempCheckArr[0]);
         var secondElement = parseInt(this.tempCheckArr[1]);
